@@ -1,5 +1,6 @@
 node default {
 }
+
 node 'localhost.localdomain' {
   include role::master_server
   file {'/root/README':
@@ -7,6 +8,10 @@ node 'localhost.localdomain' {
     content => "Welcome to ${fqdn}\n",
     owner => 'root',
   }
+}
+
+node /minetest.puppet.vm/ {
+  include role::chrome_node
 }
 
 node /^web/ {
