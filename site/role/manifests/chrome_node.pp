@@ -1,4 +1,4 @@
-class roll::chrome_node {
+class role::chrome_node {
   include profile::base
   include profile::chrome
 }
