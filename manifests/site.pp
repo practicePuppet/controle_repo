@@ -11,7 +11,7 @@ node 'localhost.localdomain' {
 }
 
 node /minetest.puppet.vm/ {
-  include role::chrome_node
+  include role::git_svn_node
 }
 
 node /^web/ {
